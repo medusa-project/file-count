@@ -4,11 +4,12 @@
   "description": "File count for directory tree with exclusions",
   "main": "main.js",
   "scripts": {
-      "start": "electron ."
+    "start": "electron ."
   },
   "author": "Howard Ding",
   "license": "NCSA",
   "dependencies": {
-    "electron-prebuilt-compile": "^1.4.0"
+    "electron-prebuilt-compile": "^1.4.0",
+    "electron-pug": "^1.5.1"
   }
 }
