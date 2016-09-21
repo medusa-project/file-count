@@ -4,8 +4,11 @@
   "description": "File count for directory tree with exclusions",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "electron ."
   },
   "author": "Howard Ding",
-  "license": "NCSA"
+  "license": "NCSA",
+  "dependencies": {
+    "electron-prebuilt-compile": "^1.4.0"
+  }
 }
