@@ -1,0 +1,11 @@
+{
+  "name": "file-count",
+  "version": "1.0.0",
+  "description": "File count for directory tree with exclusions",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Howard Ding",
+  "license": "NCSA"
+}
