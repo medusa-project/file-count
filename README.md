@@ -23,4 +23,5 @@ shouldn't matter.
 There are obvious ways this could be generalized and
 improved, but we have no need to do so right now.
 
-
+It should be possible to package and use this with electron-packager
+or the like.
