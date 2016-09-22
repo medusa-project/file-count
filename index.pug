@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title File Counter
+    link(rel='stylesheet', href='bootstrap.min.css')
+  body
+    h1 File Count
+    div.row
+      div.col-lg-2
+        a#pick-directory.btn.btn-default(href="#!") Pick Directory
+      div.col-lg-10
+        div#selected-directory
+    div.row
+      div.col-lg-12
+        a#run.btn.btn-primary(href="#!") Analyze Directory
+    div.row
+      div.col-lg-12
+        table.table.table-bordered
+          thead
+            tr
+              th
+              th
+          tbody
+            tr
+              td Total Files
+              td#total-files
+            tr
+              td Relevant Files
+              td#relevant-files
+            tr
+              td Skipped Files
+              td#skipped-files
+            tr
+              td Excluded Files
+              td#excluded-files
+    script(src="index.js")

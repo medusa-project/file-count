@@ -10,5 +10,8 @@
   "license": "NCSA",
   "dependencies": {
     "electron-prebuilt-compile": "^1.4.0"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

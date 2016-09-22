@@ -1,55 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <title>File Counter</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-</head>
-<body>
-<h1>File Count</h1>
-<div class="row">
-    <div class="col-lg-2">
-        <a href="#!" id="pick-directory" class="btn btn-default">Pick Directory</a>
+  </head>
+  <body>
+    <h1>File Count</h1>
+    <div class="row">
+      <div class="col-lg-2"><a class="btn btn-default" id="pick-directory" href="#!">Pick Directory</a></div>
+      <div class="col-lg-10">
+        <div id="selected-directory"></div>
+      </div>
     </div>
-    <div class="col-lg-10">
-        <span id="selected-directory"></span>
+    <div class="row">
+      <div class="col-lg-12"><a class="btn btn-primary" id="run" href="#!">Analyze Directory</a></div>
     </div>
-</div>
-<div class="row">
-    <div class="col-lg-12">
-        <a href="#!" id="run" class="btn btn-primary">Analyze Directory</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12">
         <table class="table table-bordered">
-            <thead>
+          <thead>
             <tr>
-                <th></th>
-                <th></th>
+              <th></th>
+              <th></th>
             </tr>
-            </thead>
-            <tbody>
+          </thead>
+          <tbody>
             <tr>
-                <td>Total Files</td>
-                <td id="total-files"></td>
-            </tr>
-            <tr>
-                <td>Relevant Files</td>
-                <td id="relevant-files"></td>
+              <td>Total Files</td>
+              <td id="total-files"></td>
             </tr>
             <tr>
-                <td>Skipped Files</td>
-                <td id="skipped-files"></td>
+              <td>Relevant Files</td>
+              <td id="relevant-files"></td>
             </tr>
             <tr>
-                <td>Excluded Files</td>
-                <td id="excluded-files"></td>
+              <td>Skipped Files</td>
+              <td id="skipped-files"></td>
             </tr>
-            </tbody>
+            <tr>
+              <td>Excluded Files</td>
+              <td id="excluded-files"></td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
-</div>
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
