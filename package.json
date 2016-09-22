@@ -9,7 +9,6 @@
   "author": "Howard Ding",
   "license": "NCSA",
   "dependencies": {
-    "electron-prebuilt-compile": "^1.4.0",
-    "electron-pug": "^1.5.1"
+    "electron-prebuilt-compile": "^1.4.0"
   }
 }

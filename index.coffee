@@ -18,11 +18,9 @@ excludedFiles = ['Thumbs.db', '.DS_Store']
 excludedFilesCell.innerHTML = excludedFiles.join(", ")
 
 selectDirectoryLink.onclick = () ->
-  dialog.showOpenDialog(properties: ['openDirectory'],
-    (directory) ->
-      selectedDirectory = directory[0]
-      selectedDirectorySpan.innerHTML = directory[0]
-  )
+  dirs = dialog.showOpenDialog(properties: ['openDirectory'])
+  selectedDirectory = dirs[0]
+  selectedDirectorySpan.innerHTML = dirs[0]
 
 runLink.onclick = () ->
   verifySelectedDirectory()
@@ -56,7 +54,6 @@ analyzeSelectedDirectory = () ->
       if stat.isDirectory()
         directoryStack.push(full_entry)
       else if stat.isFile()
-        fs.appendFileSync('z.elec', full_entry + "\n")
         totalFiles += 1
         relevantFiles += 1 if isRelevant(entry)
     updateFileCountDisplay()
