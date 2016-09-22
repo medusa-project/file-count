@@ -2,6 +2,10 @@ This is a crude file count utility, useful because it will count
 with exclusions. In our case we want to exclude
 Thumbs.db and .DS_Store. 
 
+I'd probably want to refine a bit more before actually giving
+this to someone to use, but it does show that this is a 
+viable way for us to make this sort of application.
+
 Implemented in Electron. Assuming you have node installed, 
 Do 
 
